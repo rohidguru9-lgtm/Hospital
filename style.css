@@ -1,0 +1,79 @@
+body {
+  margin:0;
+  font-family:Arial;
+}
+
+nav {
+  background:#0b6fa4;
+  color:white;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+nav a {
+  color:white;
+  margin:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.banner {
+  background:#1e90ff;
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+section {
+  padding:20px;
+  border-bottom:1px solid #ddd;
+}
+
+input, select, button, textarea {
+  padding:8px;
+  margin:6px 0;
+  width:100%;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+table, th, td {
+  border:1px solid #ccc;
+}
+
+th, td {
+  padding:8px;
+  text-align:center;
+}
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.card {
+  background:#f2f2f2;
+  padding:20px;
+  border-radius:8px;
+  text-align:center;
+}
+
+.stars span {
+  font-size:28px;
+  cursor:pointer;
+  color:gray;
+}
+
+.stars .active {
+  color:gold;
+}
+
+@media(max-width:600px){
+  nav {flex-direction:column;}
+}
